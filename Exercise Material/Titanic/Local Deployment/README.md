@@ -6,10 +6,17 @@
 `pip install -r ./requirements.txt` 
 
 # 1 Run the model training
-- A model is created using the training data
-- A corresponding file with the columns that were used for the model is also saved
+- Run in your activated conda environment
+```
+python3 train.py
+```
+- A model is created using the training data in model/model.pkl
+- A corresponding file with the columns that were used for the model is also saved in model/model_columns.pkl
 
 # 2 Start the Flask backend
+```
+python3 app.py
+
 - Flask is now running locally and uses the trained model from step 1
 - Currently there is no front-end, so you can submit predictions in 2 ways locally
 
