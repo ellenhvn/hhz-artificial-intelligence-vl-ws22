@@ -16,6 +16,7 @@ python3 train.py
 # 2 Start the Flask backend
 ```
 python3 app.py
+```
 
 - Flask is now running locally and uses the trained model from step 1
 - Currently there is no front-end, so you can submit predictions in 2 ways locally
@@ -34,11 +35,18 @@ curl -i "0.0.0.0:8080/predict?Age=30&Sex_female=0&Sex_male=1&Sex_nan=0&Embarked_
 ```
 
 # 3 Start the Docker container with the app
-- The ML Flask app is now running in a container
+
+- First, make sure Docker is running on your local machine (get Docker Desktop here: https://docs.docker.com/get-docker/ and then install and start the application)
+
+- Then, start the container with your model inference application by typing the following commands in your terminal: 
 
 `docker build -t titanic-flask-app:latest .` 
 
+This creates the container. Next, you start the container by running: 
+
 `docker run -p 8080:8080 titanic-flask-app:latest` 
+
+- The ML Flask app is now running in a container
 
 - Now you can correspond with your Docker container app again using
 
@@ -51,5 +59,5 @@ from the command line
 
 # Stopping the container
 
-Either stop the container in Docker desktop or
+Either stop the container in Docker desktop or view listed containers with and then stop it by it's container ID 
 `docker ps` & `docker stop <CONTAINER_ID>`
