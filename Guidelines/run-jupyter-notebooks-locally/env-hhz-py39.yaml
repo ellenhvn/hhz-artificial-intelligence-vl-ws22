@@ -182,6 +182,7 @@ dependencies:
   - tensorflow=2.9.1=eigen_py39h7123b6a_1
   - tensorflow-base=2.9.1=eigen_py39h36d2db2_1
   - tensorflow-estimator=2.9.0=py39hecd8cb5_0
+  - tensorflow-hub=0.8.0=pyhe6710b0_0
   - termcolor=2.1.0=py39hecd8cb5_0
   - terminado=0.13.1=py39hecd8cb5_0
   - threadpoolctl=2.2.0=pyh0d69192_0
