@@ -2,7 +2,7 @@
 
 - Select _View all spaces_ in the menu
 ![](./screenshots/1.png)
-- Select _New deployment space_
+- Select _New deployment space_ (if you do not already have one)
 ![](./screenshots/2.png)
 - Add a name and choose a machine learning service
 ![](./screenshots/4.png)
