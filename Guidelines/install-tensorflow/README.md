@@ -21,7 +21,7 @@ print(tf.__version__)
 
 3. Update or install `tensorflow-datasets` via the commands from within your notebook as needed:
 ```
-!pip install tensorflow_datasets==4.7.0
+!pip install tensorflow-datasets==4.7.0
 ```
 
 ![](./screenshots/4.png)
